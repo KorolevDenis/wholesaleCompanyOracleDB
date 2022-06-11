@@ -1,0 +1,25 @@
+.logo {
+  font-family: Work Sans, sans-serif;
+  font-weight: 600;
+  color: #FFFEFE;
+  text-align: left;
+}
+
+.menuButton {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  size: 18px;
+  margin-left: 38px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  background-color: #0099ff;
+  display: block;
+  padding-right: 79px;
+  padding-left: 20px;
+}
