@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios";
-import styles from './warehoudeTable.css';
-import SaleModal from "./SaleModal";
+import './sales.css';
+import SaleModal from "../modal/saleModal";
 import {Button} from "@material-ui/core";
 
 class Sales extends Component {
@@ -77,7 +77,7 @@ class Sales extends Component {
             <div>
                 <h1 className='title'>Sales</h1>
                 <Button className='delete-btn' onClick={e => {this.showModal(e, -1)}}>Add sale</Button>
-                <table className='warehouse1'>
+                <table className='sale-table'>
                     <tbody>
                     <tr>{this.renderTableHeader()}</tr>
                     {this.renderTableData()}

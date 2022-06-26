@@ -4,8 +4,8 @@ input[type="text"] {
 }
 
 label {
-    font-family: Arial; /* Гарнитура шрифта */
-    font-weight: lighter; /* Светлое начертание */
+    font-family: Arial, serif;
+    font-weight: lighter;
 }
 
 .modal {
@@ -93,3 +93,31 @@ select {
     height: 70vh;
     overflow-y: auto;
 }
+
+.warehouse {
+    margin: 0 20px 0;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 95%;
+    table-layout:fixed;
+}
+
+.warehouse td, .warehouse th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.warehouse tr:nth-child(even){background-color: #f2f2f2;}
+
+.warehouse tr:hover {background-color: #ddd;}
+
+.warehouse th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #c4feff;
+    color: #000000;
+}
+

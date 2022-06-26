@@ -1,0 +1,40 @@
+.title {
+    text-align: center;
+    font-family: arial, sans-serif;
+}
+
+.sale-table {
+    margin: 0 20px 0;
+    text-align: center;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 3px solid #ddd;
+    width: 95%;
+    table-layout:fixed;
+}
+
+.sale-table td, .sale-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.sale-table tr:nth-child(even){background-color: #f2f2f2;}
+
+.sale-table tr:hover {background-color: #ddd;}
+
+.sale-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #c4feff;
+    color: #000000;
+}
+
+.delete-btn {
+    width: 20%;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    line-height: 1;
+    border: 1px solid #b70505;
+}

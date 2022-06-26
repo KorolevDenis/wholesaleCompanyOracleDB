@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDom from 'react-dom'
 import axios from "axios";
-import {Button, Link} from "@material-ui/core";
+import {Button} from "@material-ui/core";
+import './modal.css';
 
 export default class GoodModal extends React.Component {
     constructor(props) {

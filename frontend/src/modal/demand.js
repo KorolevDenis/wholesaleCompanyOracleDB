@@ -3,6 +3,7 @@ import axios from "axios";
 import {Button} from "@material-ui/core";
 import ReactDom from "react-dom";
 import ReactApexChart from "react-apexcharts";
+import './modal.css';
 
 class Child extends React.Component {
     constructor(props) {
@@ -82,11 +83,12 @@ class Child extends React.Component {
 
         return (
             <div>
-                <div id="chart">
-                    <ReactApexChart id = "demand-chart" options={this.state.options} series={this.state.series} type="line" height={350}/>
+                <div>
+                    <ReactApexChart options={this.state.options} series={this.state.series}
+                                    type="line" height={350}/>
                 </div>
 
-                <table className='warehouse1'>
+                <table className='warehouse'>
                 <tbody>
                 <tr>{this.renderTableHeader()}</tr>
                 {this.renderTableData(this.props.demands)}

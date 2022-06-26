@@ -6,9 +6,9 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import { Link as RouterLink } from "react-router-dom";
-import {Route, Router} from 'react-router-dom'
-import Warehouses from "./Warehouses";
-import Goods from "./Goods";
+import Warehouses from "../warehouse/warehouses";
+import Goods from "../good/goods";
+import './header.css';
 
 const headersData = [
     {

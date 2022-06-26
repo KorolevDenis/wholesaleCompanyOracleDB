@@ -1,8 +1,9 @@
 import React, {Component, useEffect, useState} from 'react'
 import axios from "axios";
-import GoodModal from "./GoodModal";
+import GoodModal from "../modal/goodModal";
 import {Button} from "@material-ui/core";
-import Demand from "./Demand";
+import Demand from "../modal/demand";
+import './goods.css';
 
 export default function Goods(props) {
     const [isShown, setIsShown] = useState(false);
@@ -105,17 +106,17 @@ export default function Goods(props) {
             <h1 className='title'>Goods</h1>
             <h4 className='title-most-popular'>Five the most important goods</h4>
 
-            <table className='warehouse1 most-popular-table'>
+            <table className='good-table most-popular-table'>
                 <tbody>
                 <tr>{renderTableHeaderMost()}</tr>
                 {renderTableDataMost(mostGoods)}
                 </tbody>
             </table>
 
-            <Button className='btn add-btn' onClick={e => {
+            <Button className='add-btn' onClick={e => {
                 showModal(e, -1)
             }}>Add Good</Button>
-            <table className='warehouse1' id="main-table">
+            <table className='good-table'>
                 <tbody>
                 <tr>{renderTableHeader()}</tr>
                 {renderTableData(goods)}

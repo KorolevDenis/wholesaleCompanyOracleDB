@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from 'react-dom'
-import styles from './Modal.css';
+import './modal.css';
 import axios from "axios";
 import {Button} from "@material-ui/core";
 

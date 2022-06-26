@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import axios from "axios";
-import {Button, makeStyles} from "@material-ui/core";
-import styles from './warehoudeTable.css';
-import SaleModal from "./SaleModal";
-import WarehouseModal from "./WarehouseModal";
+import {Button} from "@material-ui/core";
+import './warehouses.css';
+import WarehouseModal from "../modal/warehouseModal";
 
 class Warehouses extends Component {
     state = {
@@ -59,7 +58,7 @@ class Warehouses extends Component {
                 <h1 className='title'>Warehouse {this.props.warehouseNumber}</h1>
                 {this.props.warehouseNumber === 1 ?
                     (<Button className='add-btn' onClick={e => {this.showModal(e, -1)}}>Add good</Button>) : null}
-                <table className='warehouse1'>
+                <table className='warehouse-table'>
                     <tbody>
                     <tr>{this.renderTableHeader()}</tr>
                     {this.renderTableData()}
